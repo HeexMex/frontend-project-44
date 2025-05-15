@@ -1,11 +1,10 @@
 #!/usr/bin/env node 
-import readlineSync from 'readline-sync';
-console.log('Welcome to the Brain Games!')
-let name = readlineSync.question('May I have your name?')
-    console.log('Hello,', name+'!') 
+    import readlineSync from 'readline-sync';
+    console.log('Welcome to the Brain Games!')
+    import name from '../src/cli.js';
     console.log('Answer "yes" if the number is even, otherwise answer "no".')
 
-function main() {
+    function main() {
     function getRandomInt(max) {
         return Math.floor(Math.random() * max + 1);
         }
@@ -42,3 +41,5 @@ while (i <= 2) {
         i = 4;
     }
 }
+
+
