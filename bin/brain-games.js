@@ -1,33 +1,28 @@
 #!/usr/bin/env node 
-    import readlineSync from 'readline-sync';
-    console.log('Welcome to the Brain Games!')
-    import name from '../src/cli.js';
-    console.log('Answer "yes" if the number is even, otherwise answer "no".')
+    // import number from './brain-even.js';
+    // import correctAnswer from './brain-even.js';
+import { number, correctAnswer } from './brain-even.js';
+import readlineSync from 'readline-sync';
+console.log('Welcome to the Brain Games!')
+import name from '../src/cli.js';
 
+
+    console.log('Answer "yes" if the number is even, otherwise answer "no".')
     function main() {
-    function getRandomInt(max) {
-        return Math.floor(Math.random() * max + 1);
-        }
-        let number = getRandomInt(99)
-    console.log('Question:'+ number)
-    const answer = readlineSync.question('Your answer: ').toLowerCase().trim()
+        console.log('Question:'+ number)
+        const answer = readlineSync.question('Your answer: ').toLowerCase().trim()
     
-    let correctAnswer;
-    if (number % 2 === 0) {
-        correctAnswer = 'yes'
-    } else {
-        correctAnswer = 'no'
-    }
-    // const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
+
+        // const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
     
-    if (answer === correctAnswer) {
-        console.log('Correct!');
-        return true;
-    } else {
+        if (answer === correctAnswer) {
+            console.log('Correct!');
+            return true;
+        } else {
         console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${name}!`)
         return false;
+        }
     }
-}
 
 let i = 0;
 while (i <= 2) {
