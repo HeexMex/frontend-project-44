@@ -15,6 +15,7 @@
   "dependencies": {
     "airbnb": "^0.0.2",
     "eslint": "^9.26.0",
+    "make": "^0.8.1",
     "readline-sync": "^1.4.10"
   },
   "keywords": []

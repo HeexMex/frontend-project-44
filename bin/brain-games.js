@@ -1,6 +1,7 @@
 console.log('Welcome to the Brain Games!')
 import name from '../src/cli.js';
-import main from '../bin/brain-even.js'
+import main from '../bin/brain-even.js';
+import calc from './brain-calc.js'
 
     
 
@@ -14,6 +15,20 @@ while (i <= 2) {
         }
     } else {
         i = 4;
+    }
+}
+
+
+let l = 0;
+while (l <= 2) {
+    if (calc()) {
+        l += 1;
+        if (l === 3) {
+            console.log(`Congratulations, ${name}!`);
+            l = 4
+        }
+    } else {
+        l = 4;
     }
 }
 
