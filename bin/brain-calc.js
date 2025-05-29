@@ -1,12 +1,12 @@
-import name from "../src/cli.js";
+import * as Op from "../src/cli.js";
 import readlineSync from 'readline-sync'
 
 const calc = () => {
     console. log("What is the result of the expression?");
 
     const operators = ['+', '-', '*'];
-    let num1 = Math.floor(Math.random() * 99 + 1);
-    let num2 = Math.floor(Math.random() * 99 + 1);
+    let num1 = Op.Rand();
+    let num2 = Op.Rand();
     const operator = operators[Math.floor(Math.random() * operators.length)];
 
     console. log(`Question: ${num1} ${operator} ${num2}`)
@@ -19,7 +19,7 @@ const calc = () => {
         return true
     
     } else {
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${name}!`)
+        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${Op.name}!`)
         return false
     }
 };
@@ -31,7 +31,7 @@ const calc = () => {
                 return false;
             }
         }
-        console.log("Congratulations, " + name + "!");
+        console.log("Congratulations, " + Op.name + "!");
 }
 brain_calc()
 
