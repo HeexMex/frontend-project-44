@@ -24,7 +24,7 @@ const calc = () => {
     }
 };
 
-    const brain_calc = () => {
+    export default () => {
         for (let i = 0; i < 3; i++) {
             const result = calc()
             if (result === false) {
@@ -33,6 +33,4 @@ const calc = () => {
         }
         console.log("Congratulations, " + Op.name + "!");
 }
-brain_calc()
 
-export default calc;

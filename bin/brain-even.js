@@ -2,7 +2,7 @@ import { defineConfig } from "eslint/config";
 import * as Op from '../src/cli.js';
 import readlineSync from 'readline-sync';
 
-    export default function main() {
+    const main = () => {
         console.log('Answer "yes" if the number is even, otherwise answer "no".')
         const number = Op.Rand();
         console.log('Question:'+ number)
@@ -21,7 +21,7 @@ import readlineSync from 'readline-sync';
         return false;
         }
     }
-    const brain_even = () => {
+    export default () => {
         for (let i = 0; i < 3; i++) {
             const result = main()
             if (result === false) {
@@ -30,4 +30,3 @@ import readlineSync from 'readline-sync';
         }
         console.log("Congratulations, " + Op.name + "!");
 }
-brain_even()
