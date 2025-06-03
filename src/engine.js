@@ -1,4 +1,3 @@
-
 import name from '../src/cli.js'
 const userName = name()
 

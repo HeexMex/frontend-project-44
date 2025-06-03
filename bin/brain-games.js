@@ -23,8 +23,4 @@ name()
 //     exPrime()
 // } if (startAnswer == 'brain-progression') {
 //     exProgression()
-// } 
-    
-
-
-
+// }
