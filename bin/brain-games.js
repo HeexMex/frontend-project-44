@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // import readlineSync from 'readline-sync';
 // import exCalc from './brain-calc.js';
 // import exEven from './brain-even.js';
