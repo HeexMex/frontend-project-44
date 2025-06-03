@@ -19,9 +19,15 @@
   },
   "dependencies": {
     "airbnb": "^0.0.2",
-    "eslint": "^9.26.0",
     "make": "^0.8.1",
     "readline-sync": "^1.4.10"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "@eslint/create-config": "^1.9.0",
+    "@eslint/js": "^9.28.0",
+    "@stylistic/eslint-plugin": "^4.4.0",
+    "eslint": "^9.28.0",
+    "globals": "^16.2.0"
+  }
 }
