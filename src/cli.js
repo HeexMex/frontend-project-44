@@ -1,11 +1,10 @@
-import readlineSync from 'readline-sync';
-let name = readlineSync.question('May I have your name?')
-console.log('Hello,', name+'!') 
+import readlineSync from 'readline-sync'
 
-
-const Rand = () => {
-    let kol = Math.floor(Math.random() * 99 + 1)
-    return kol
+const name = () => {
+  console.log('Welcome to the Brain Games!')
+  const usName = readlineSync.question('May I have your name? ')
+  console.log('Hello, ' + usName + '!')
+  return usName
 }
 
-export {name, Rand}
+export default name
